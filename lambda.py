@@ -31,3 +31,20 @@ def funcao(x):
 somatoria2 = list(map(funcao,valores))
 
 print(somatoria2)
+
+print('-'*50)
+
+soma_args = lambda *args: sum(args)
+
+resultado = soma_args(1, 2, 3, 4, 5)
+print(resultado)
+
+print('-'*50)
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+soma_indices_pulando_um = lambda lst: sum(lst[i] for i in range(0, len(lst), 2))
+
+resultado = soma_indices_pulando_um(lista)
+
+print(resultado)
